@@ -1,8 +1,10 @@
-- 属性注入 (默认方式，最为常用)
-- 构造注入
+bean的注入方式主要有以下三种：
+
+- `属性注入 (默认方式，最为常用)`
+- `构造注入`
 - 工厂方法注入 (不用)
 
->属性注入：
+## 属性注入：
 ```xml
 <!-- 配置bean -->
 <bean id="student" class="com.weixin.bean.Student">
@@ -11,7 +13,7 @@
 </bean>
 ```
 
->构造注入：
+## 构造注入：
 ```xml
 <!-- 配置bean -->
 <bean class="com.weixin.bean.Student">
@@ -29,6 +31,7 @@
 public class ClassRoom {
 	private int cid;
 	private String name;
+}
 ```
 `写法1`：
 ```xml
@@ -44,7 +47,7 @@ public class ClassRoom {
     <property name="classRoom" ref="classRoom"></property>
 </bean>
 ```
-`写法2`
+`写法2(内部bean)`
 ```xml
 <!-- 配置学生bean -->
 <bean class="com.weixin.bean.Student">
@@ -65,6 +68,7 @@ public class Student {
 	private String name;
 	private String gender;
     private List<ClassRoom> ClassRooms;
+}
 ```
 ```xml
 <!-- 配置学生bean -->
@@ -81,7 +85,7 @@ public class Student {
 </bean>
 ```
 !>上面案例list中一个classroom来自外部，一个是内部bean
-配置数组也是用list标签，而set集合使用<set>
+配置数组也是用list标签，而set集合使用set标签，基本使用一样
 
 >学生类中有map属性：
 

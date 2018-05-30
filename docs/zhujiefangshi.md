@@ -1,10 +1,10 @@
-Spring能够从classpath中自动扫描到bean
+#### Spring能够从classpath中自动扫描到bean
 
 注解包括：
-- @Component :除了下面的都拿它标识
-- @Respository ：持久层
-- @Service :业务层
-- @Controller :控制层
+- `@Component :除了下面的都拿它标识`
+- `@Respository ：持久层`
+- `@Service :业务层`
+- `@Controller :控制层`
 
 对于扫描到的bean，默认id就是类名首字母小写，当然我们也可以通过value属性指定bean
 
@@ -23,7 +23,7 @@ Spring能够从classpath中自动扫描到bean
 此节点有一个属性type: type的取值annotation(注解) 和assignable(具体接口或类)
 ```xml
 <context:component-scan base-package="com.weixin.bean">
-	<context:exclude-filter type="annotation" xpression="org.springframework.stereotype.Component"/>
+	<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Component"/>
 </context:component-scan>
 ```
 ```xml
@@ -65,4 +65,4 @@ spring容器会首先根据变量名=bean的id名(此处id必须是手动指定�
 	}
 ```
 
-?> @resource @Inject 和@Autowired用法功能类似，功能不全，建议使用@Autowired
+?> @resource @Inject 和@Autowired用法功能类似，功能不全，建议使用`@Autowired`
