@@ -28,7 +28,7 @@
 ```
 ```xml
 <context:component-scan base-package="com.weixin.bean" use-default-filters="false">
-    <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
 </context:component-scan>
 ```
 ```xml
