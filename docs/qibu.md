@@ -14,7 +14,7 @@
 
 >导入jar包
 
-spring需要beans,core,context,expression(Spel)4个基础包+common-logging附加包
+spring需要beans,core,context,expression(Spel)4个基础包+日志实现(common-logging+log4j)附加包
 ```xml
 <dependency>
     <groupId>org.springframework</groupId>
@@ -41,7 +41,6 @@ spring需要beans,core,context,expression(Spel)4个基础包+common-logging附�
 	<artifactId>commons-logging</artifactId>
 	<version>1.2</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/log4j/log4j -->
 <dependency>
 	<groupId>log4j</groupId>
 	<artifactId>log4j</artifactId>
