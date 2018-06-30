@@ -37,9 +37,15 @@ spring需要beans,core,context,expression(Spel)4个基础包+common-logging附�
     <version>4.3.13.RELEASE</version>
 </dependency>
 <dependency>
-    <groupId>commons-logging</groupId>
-    <artifactId>commons-logging</artifactId>
-    <version>1.2</version>
+	<groupId>commons-logging</groupId>
+	<artifactId>commons-logging</artifactId>
+	<version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+	<groupId>log4j</groupId>
+	<artifactId>log4j</artifactId>
+	<version>1.2.17</version>
 </dependency>
 ```
 ![](img/5.png)
