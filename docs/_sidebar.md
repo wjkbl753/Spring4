@@ -12,3 +12,9 @@
     * [提出](tichu)
     * [aop术语](shuyu)
     * [使用](shiyong)
+
+* spring+mybatis整合
+    * [环境搭建](huanjingdajian)
+    * [SqlSessionFactory及SqlSession的托管](sqlsessionfactory_sqlsession)
+    * [MapperFactoryBean](MapperFactoryBean)
+    * [MapperScannerConfigurer(批量配置,final)](piliangpeizhi)
