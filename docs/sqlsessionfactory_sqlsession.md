@@ -20,7 +20,7 @@
 <!-- sqlsession工厂 -->
 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 	<property name="dataSource" ref="dataSource"></property>
-	<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+	<property name="typeAliasesPackage" value="com.weixin.bean"></property>
 	<property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
 </bean>
 <!-- sqlsesson连接,此类没有 -->

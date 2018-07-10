@@ -18,3 +18,6 @@
     * [SqlSessionFactory及SqlSession的托管](sqlsessionfactory_sqlsession)
     * [MapperFactoryBean](MapperFactoryBean)
     * [MapperScannerConfigurer(批量配置,final)](piliangpeizhi)
+
+* 事务
+    * [声明式事务配置](shiwupeizhi)
