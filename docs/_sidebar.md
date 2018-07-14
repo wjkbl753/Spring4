@@ -18,7 +18,7 @@
 * spring+mybatis整合
     * [环境搭建](huanjingdajian)
     * [SqlSessionFactory及SqlSession的托管](sqlsessionfactory_sqlsession)
-    * [MapperFactoryBean](MapperFactoryBean)
+    * [MapperFactoryBean](mapperfactorybean)
     * [MapperScannerConfigurer(批量配置,final)](piliangpeizhi)
 
 * 事务
