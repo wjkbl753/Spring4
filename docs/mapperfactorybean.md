@@ -31,4 +31,4 @@
 </bean> 
 </beans>
 ```
-[实例](/jar/Spring_Mybatis2.zip ':ignore')
+[实例](/jar/Spring_Mybatis2.zip ':ignore') 
