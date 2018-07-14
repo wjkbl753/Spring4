@@ -13,7 +13,6 @@
     * [aop术语](shuyu)
     * [使用-注解](shiyong-zhujie)
     * [使用-XML](shiyong-xml)
-    * [事务](shiwu)
 
 * spring+mybatis整合
     * [环境搭建](huanjingdajian)
