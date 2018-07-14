@@ -11,4 +11,9 @@
 * aop
     * [提出](tichu)
     * [aop术语](shuyu)
-    * [使用](shiyong)
+    * [使用-注解](shiyong-zhujie)
+    * [使用-XML](shiyong-xml)
+    * [事务](shiwu)
+
+* web项目的spring,mybatis整合
+    * [整合spring](spring)
