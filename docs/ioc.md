@@ -30,7 +30,7 @@ Spring 容器是 Spring 框架的核心。容器将创建对象，把它们连�
    
    ApplicationContext的主要实现类：
     - `ClassPathXmlApplicationContext`:从类路径加载配置文件初始化容器
-    - FileSystemXmlApplicationContext:从文件系统中加载配置文件初始化容器
+    - `FileSystemXmlApplicationContext`:从文件系统中加载配置文件初始化容器
 ```java
 ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 ```
