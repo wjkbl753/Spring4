@@ -109,26 +109,6 @@ public class Student {
 </property>
 ```
 
->类中有properties属性
-
-Properties类是Map的一个子接口，多见于第三方类的配置
-```java
-public class DataSource {
-	private Properties properties;
-```
-```xml
-<bean id="dataSource" class="com.weixin.bean.DataSource">
-    <property name="properties">
-        <props>
-            <prop key="url">xxx</prop>
-            <prop key="username">user</prop>
-            <prop key="password">pass</prop>
-            <prop key="driverClass">com.mysql.jdbc.Driver</prop>
-        </props>
-    </property>
-</bean>
-```
-
 >使用p命名空间为属性赋值:
 
 ```xml
