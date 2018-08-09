@@ -18,6 +18,7 @@
     * [环境搭建](huanjingdajian)
     * [SqlSessionFactory及SqlSession的托管](sqlsessionfactory_sqlsession)
     * [MapperScannerConfigurer(批量配置,final)](piliangpeizhi)
+    * [spring整合junit测试](springceshi)
 
 * 事务
     * [声明式事务配置](shiwupeizhi)
