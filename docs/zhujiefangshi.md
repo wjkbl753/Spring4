@@ -43,7 +43,7 @@
 
 现在已经可以使用注解，使ioc容器维护bean，但是bean之间的关联关系我们可以使用 @Autowired
 此注解可以写在属性上，构造方法上，setter方法上
-spring容器会首先根据变量名=bean的id名(此处id必须是手动指定的，默认的不行)去匹配，如果匹配不上再根据类型查找容器中相应的bean进行关联
+spring容器会首先根据变量名=bean的id名去匹配，如果匹配不上再根据类型查找容器中相应的bean进行关联
 
 !>默认容器中必须有匹配bean，如果允许可以没有此类型的bean，那么可以@Autowired(required=false)
 
