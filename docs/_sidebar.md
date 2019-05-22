@@ -12,7 +12,7 @@
     * [提出](tichu)
     * [aop术语](shuyu)
     * [使用-注解](shiyong-zhujie)
-    * [使用-XML](shiyong-xml)
+    * [~~使用-XML~~](shiyong-xml)
 
 * spring+mybatis整合
     * [环境搭建](huanjingdajian)
