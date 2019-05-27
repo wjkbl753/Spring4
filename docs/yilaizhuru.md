@@ -61,7 +61,7 @@ public class ClassRoom {
 </bean>
 ```
 
->学生类中有list,array,set属性：
+>~~学生类中有list,array,set属性~~：
 
 ```java
 public class Student {
@@ -87,7 +87,7 @@ public class Student {
 !>上面案例list中一个classroom来自外部，一个是内部bean
 配置数组也是用list标签，而set集合使用set标签，基本使用一样
 
->学生类中有map属性：
+>~~学生类中有map属性~~：
 
 ```java
 public class Student {
@@ -109,7 +109,7 @@ public class Student {
 </property>
 ```
 
->使用p命名空间为属性赋值:
+>~~使用p命名空间为属性赋值~~:
 
 ```xml
 <bean id="student2" class="com.weixin.bean.Student" p:name="小李" p:gender="男"></bean>
