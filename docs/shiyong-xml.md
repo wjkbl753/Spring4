@@ -43,12 +43,12 @@ public class StudentAop2 {
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
 
-<bean id="studentService" class="com.weixin.service.impl.StudentServiceImpl"/> 
-<bean id="myAop" class="com.weixin.aop.StudentAop2"/>
+<bean id="studentService" class="com.woyuno.service.impl.StudentServiceImpl"/> 
+<bean id="myAop" class="com.woyuno.aop.StudentAop2"/>
 
 <aop:config>
 	<aop:aspect ref="myAop">
-		<aop:pointcut expression="execution(* com.weixin..service.*.*(..))" id="pointcut"/>
+		<aop:pointcut expression="execution(* com.woyuno..service.*.*(..))" id="pointcut"/>
 		<!-- <aop:before method="before" pointcut-ref="pointcut"/>
 		<aop:after-returning method="afterReturning" pointcut-ref="pointcut" returning="r"/>
 		<aop:after-throwing method="afterThrowing" pointcut-ref="pointcut" throwing="e"/>

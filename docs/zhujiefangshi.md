@@ -12,7 +12,7 @@
 
 ```xml
 <!-- base-package表示需要扫描的包及子包 -->
-<context:component-scan base-package="com.weixin.bean"></context:component-scan>
+<context:component-scan base-package="com.woyuno.bean"></context:component-scan>
 ```
 
 子节点： 可以有多个
@@ -22,20 +22,20 @@
 `<context:exclude-filter>` 不包含特例
 此节点有一个属性type: type的取值annotation(注解) 和assignable(具体接口或类)
 ```xml
-<context:component-scan base-package="com.weixin.bean">
+<context:component-scan base-package="com.woyuno.bean">
 	<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Component"/>
 </context:component-scan>
 ```
 ```xml
-<context:component-scan base-package="com.weixin.bean" use-default-filters="false">
+<context:component-scan base-package="com.woyuno.bean" use-default-filters="false">
     <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
 </context:component-scan>
 ```
 ```xml
-<context:component-scan base-package="com.weixin.bean">
-	<context:exclude-filter type="assignable" expression="com.weixin.dao.StudentDAO"/>
+<context:component-scan base-package="com.woyuno.bean">
+	<context:exclude-filter type="assignable" expression="com.woyuno.dao.StudentDAO"/>
     <!-- 或者 -->
-    <!--<context:exclude-filter type="assignable" expression="com.weixin.dao.impl.StudentDAOImpl"/> -->
+    <!--<context:exclude-filter type="assignable" expression="com.woyuno.dao.impl.StudentDAOImpl"/> -->
 </context:component-scan>
 ```
 

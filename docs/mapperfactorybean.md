@@ -8,7 +8,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-<context:component-scan base-package="com.weixin"/>
+<context:component-scan base-package="com.woyuno"/>
 <context:property-placeholder location="classpath:db.properties"/>
 <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 	<property name="driverClass" value="${jdbcDriver}"></property>
@@ -20,13 +20,13 @@
 <!-- sqlsession工厂 -->
 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 	<property name="dataSource" ref="dataSource"></property>
-	<property name="typeAliasesPackage" value="com.weixin.bean"></property>
+	<property name="typeAliasesPackage" value="com.woyuno.bean"></property>
 	<property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
 </bean>
 
 <!-- 直接使用MapperFactoryBean维护Mapper,缺点是得一个一个的配接口 -->
  <bean class="org.mybatis.spring.mapper.MapperFactoryBean">
- 	<property name="mapperInterface" value="com.weixin.mapper.StudentMapper"></property>
+ 	<property name="mapperInterface" value="com.woyuno.mapper.StudentMapper"></property>
 	<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 </bean> 
 </beans>

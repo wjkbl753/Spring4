@@ -27,7 +27,7 @@
 ```
 ### 配置文件开启包扫描和aop:
 ```xml
-<context:component-scan base-package="com.weixin"/>
+<context:component-scan base-package="com.woyuno"/>
 <aop:aspectj-autoproxy/>
 ```
 业务层接口：
@@ -60,23 +60,23 @@ public class StudentServiceImpl implements StudentService{
 @Aspect
 @Component
 public class StudentAop {
-	@Before("execution(* com.weixin..service.*.*(..))")
+	@Before("execution(* com.woyuno..service.*.*(..))")
 	public void before(JoinPoint joinPoint) {
 		System.out.println("学生增加之前操作--方法名:"+joinPoint.getSignature().getName()+"方法参数:"+Arrays.toString(joinPoint.getArgs()));
 	}
-	@AfterReturning(value="execution(* com.weixin..service.*.*(..))",returning="r")
+	@AfterReturning(value="execution(* com.woyuno..service.*.*(..))",returning="r")
 	public void afterReturning(JoinPoint joinPoint,Object r) {
 		System.out.println("正常返回后执行--方法名:"+joinPoint.getSignature().getName()+"方法参数:"+Arrays.toString(joinPoint.getArgs())+"==返回值"+r);
 	}
-	@AfterThrowing(value="execution(* com.weixin..service.*.*(..))",throwing="e")
+	@AfterThrowing(value="execution(* com.woyuno..service.*.*(..))",throwing="e")
 	public void afterThrowing(JoinPoint joinPoint,Exception e) {
 		System.out.println("出现异常时执行--方法名:"+joinPoint.getSignature().getName()+"方法参数:"+Arrays.toString(joinPoint.getArgs())+"异常"+e);
 	}
-	@After("execution(* com.weixin..service.*.*(..))")
+	@After("execution(* com.woyuno..service.*.*(..))")
 	public void after(JoinPoint joinPoint) {
 		System.out.println("后置执行--方法名:"+joinPoint.getSignature().getName()+"方法参数:"+Arrays.toString(joinPoint.getArgs()));
 	}
-	/*@Around("execution(* com.weixin..service.*.*(..))")
+	/*@Around("execution(* com.woyuno..service.*.*(..))")
 	public Object around(ProceedingJoinPoint pjp) throws Throwable {
 		String methodName = pjp.getSignature().getName();
 		System.out.println("这是"+methodName+"方法的前置");

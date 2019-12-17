@@ -20,7 +20,7 @@
 </tx:advice> -->
 <!--  切面  -->
 <!-- <aop:config>
-    <aop:pointcut expression="execution(* com.weixin.service..*.*(..))" id="txPointcut"/>
+    <aop:pointcut expression="execution(* com.woyuno.service..*.*(..))" id="txPointcut"/>
     <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
 </aop:config> -->
 ```

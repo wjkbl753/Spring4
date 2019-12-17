@@ -7,7 +7,7 @@ bean的注入方式主要有以下三种：
 ## 属性注入：
 ```xml
 <!-- 配置bean -->
-<bean id="student" class="com.weixin.bean.Student">
+<bean id="student" class="com.woyuno.bean.Student">
     <property name="name" value="小明"></property>
     <property name="gender" value="男"></property>
 </bean>
@@ -16,7 +16,7 @@ bean的注入方式主要有以下三种：
 ## 构造注入：
 ```xml
 <!-- 配置bean -->
-<bean class="com.weixin.bean.Student">
+<bean class="com.woyuno.bean.Student">
     <constructor-arg name="name" value="小明"></constructor-arg>
     <constructor-arg name="gender" value="男"></constructor-arg>
 </bean>
@@ -36,13 +36,13 @@ public class ClassRoom {
 `写法1`：
 ```xml
 <!-- 配置教室bean -->
-<bean id="classRoom" class="com.weixin.bean.ClassRoom">
+<bean id="classRoom" class="com.woyuno.bean.ClassRoom">
     <property name="cid" value="1"></property>
     <property name="name" value="1班"></property>
 </bean>
 
 <!-- 配置学生bean -->
-<bean class="com.weixin.bean.Student">
+<bean class="com.woyuno.bean.Student">
     <!-- 使用ref属性建立bean之间的关系 -->
     <property name="classRoom" ref="classRoom"></property>
 </bean>
@@ -50,10 +50,10 @@ public class ClassRoom {
 `写法2(内部bean)`
 ```xml
 <!-- 配置学生bean -->
-<bean class="com.weixin.bean.Student">
+<bean class="com.woyuno.bean.Student">
     <property name="classRoom">
         <!-- 内部教室bean，但是这个bean不能被其他bean引用 -->
-        <bean class="com.weixin.bean.ClassRoom">
+        <bean class="com.woyuno.bean.ClassRoom">
             <property name="cid" value="1"></property>
             <property name="name" value="1班"></property>
         </bean>
@@ -72,11 +72,11 @@ public class Student {
 ```
 ```xml
 <!-- 配置学生bean -->
-<bean class="com.weixin.bean.Student">
+<bean class="com.woyuno.bean.Student">
     <property name="classRooms">
         <list>
             <ref bean="classRoom"/>
-            <bean class="com.weixin.bean.ClassRoom">
+            <bean class="com.woyuno.bean.ClassRoom">
                 <property name="cid" value="2"></property>
                 <property name="name" value="2班"></property>
             </bean>
@@ -100,7 +100,7 @@ public class Student {
     <map>
         <entry key="aa" value-ref="classRoom"></entry>
         <entry key="bb">
-            <bean id="classRoom" class="com.weixin.bean.ClassRoom">
+            <bean id="classRoom" class="com.woyuno.bean.ClassRoom">
                 <property name="cid" value="3"></property>
                 <property name="name" value="3班"></property>
             </bean>
@@ -112,7 +112,7 @@ public class Student {
 >~~使用p命名空间为属性赋值~~:
 
 ```xml
-<bean id="student2" class="com.weixin.bean.Student" p:name="小李" p:gender="男"></bean>
+<bean id="student2" class="com.woyuno.bean.Student" p:name="小李" p:gender="男"></bean>
 ```
 
 >使用外部配置数据源：

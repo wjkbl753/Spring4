@@ -81,7 +81,7 @@ public class StudentTest {
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- 配置bean -->
-	<bean id="student" class="com.weixin.bean.Student">
+	<bean id="student" class="com.woyuno.bean.Student">
 		<property name="name" value="小红"></property>
 		<property name="gender" value="女"></property>
 	</bean>

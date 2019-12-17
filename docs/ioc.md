@@ -13,7 +13,7 @@ Spring 容器是 Spring 框架的核心。容器将创建对象，把它们连�
 >xml方式：
 
 ```xml
-	<bean id="student" class="com.weixin.bean.Student">
+	<bean id="student" class="com.woyuno.bean.Student">
 		<property name="name" value="小红"></property>
 		<property name="gender" value="女"></property>
 	</bean>
